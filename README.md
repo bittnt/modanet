@@ -11,9 +11,8 @@
 </p></details><p></p>
 
 
-**ModaNet** is a street fashion images dataset consisting of annotations related to RGB images. 
-ModaNet provides multiple polygon annotations for each image.  
-Each polygon is associated with a label from 13 meta fashion categories. The annotations are based on images in the [PaperDoll image set](http://vision.is.tohoku.ac.jp/~kyamagu/research/paperdoll/), which has only a few hundred images annotated by the superpixel-based tool. The contribution of ModaNet is to provide new and extra **polygon** annotations for the images.
+**ModaNet** is a street fashion images dataset consisting of annotations related to RGB images. ModaNet provides multiple polygon annotations for each image. This dataset is described in a technical paper with the title [`ModaNet: A Large-Scale Street Fashion Dataset with Polygon Annotations`](https://arxiv.org/pdf/1807.01394.pdf).
+Each polygon is associated with a label from 13 meta fashion categories. The annotations are based on images in the [PaperDoll image set](https://github.com/kyamagu/paperdoll/tree/master/data/chictopia), which has only a few hundred images annotated by the superpixel-based tool. The contribution of ModaNet is to provide new and extra **polygon** annotations for the images.
 
 
 ## Why we made ModaNet
@@ -24,21 +23,21 @@ ModaNet is intended to serve an educational purpose by providing a benchmark ann
 ### Labels
 Each polygon (bounding box, segmentation mask) annotation is assigned to one of the following labels:
 
-| Label | Description |
-| --- | --- |
-| 1 | bag |
-| 2 | belt |
-| 3 | boots |
-| 4 | footwear |
-| 5 | outer |
-| 6 | dress |
-| 7 | sunglasses |
-| 8 | pants |
-| 9 | top |
-|10 | shorts |
-|11 | skirt |
-|12 | headwear |
-|13 | scarf & tie |
+| Label | Description | Fine-Grained-categories |
+| --- | --- | --- |
+| 1 | bag | bag |
+| 2 | belt | belt |
+| 3 | boots | boots |
+| 4 | footwear | footwear |
+| 5 | outer | coat/jacket/suit/blazers/cardigan/sweater/Jumpsuits/Rompers/vest |
+| 6 | dress | dress/t-shirt dress |
+| 7 | sunglasses | sunglasses |
+| 8 | pants | pants/jeans/leggings |
+| 9 | top | top/blouse/t-shirt/shirt |
+|10 | shorts | shorts |
+|11 | skirt | skirt |
+|12 | headwear | headwear |
+|13 | scarf & tie | scartf & tie |
 
 The annotation data format of ModaNet follows the same style as [COCO-dataset](http://cocodataset.org).
 
@@ -179,7 +178,7 @@ To discuss the dataset, please contact [Moda-net Google Group](https://groups.go
 ## Citing ModaNet
 If you use ModaNet, we would appreciate reference to the following paper:
 
-Shuai Zheng, Fan Yang, M. Hadi Kiapour, Robinson Piramuthu. ModaNet: A Large-Scale Street Fashion Dataset with Polygon Annotations. ACM Multimedia, 2018.
+Shuai Zheng, Fan Yang, M. Hadi Kiapour, Robinson Piramuthu. ModaNet: A Large-Scale Street Fashion Dataset with Polygon Annotations. ACM Multimedia, 2018. [PDF](https://arxiv.org/pdf/1807.01394.pdf)
 
 
 Biblatex entry:
